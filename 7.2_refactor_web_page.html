@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 70%;
+            margin: 0 auto;
+            height: 100%;
+
+        }
+
+        /* Style the header */
+        header {
+            background-color: #3b5998;
+            padding: 10px;
+            text-align: center;
+            color: whitesmoke;
+            font-weight: bold;
+            margin: 1%;
+        }
+
+        .area {
+            height: calc(100% - 200px);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 42%;
+            /* only for demonstration, should be removed */
+            background: whitesmoke;
+            padding: 20px;
+            margin: 1%;
+            height: 100%;
+            height: 99%;
+
+        }
+
+        img {
+            border-radius: 50%;
+            border: 2px black solid;
+        }
+
+        a {
+            color: whitesmoke;
+        }
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: right;
+            padding: 20px;
+            width: 53%;
+            background-color: whitesmoke;
+            margin: 1%;
+            height: 99%;
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #3b5998;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            margin: 1%;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/5c4607dc13.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <p>Anan Amer</p>
+    </header>
+
+    <section class="area">
+        <nav>
+            <img src="img/Anan_Amer.jpg" style="width:100%">
+        </nav>
+
+        <article>
+            <h3 class="title">I am a programmer <span class="fas fa-laptop-code"></span></h3>
+            <p>Anan Amer's bio is LOADING <span class="fas fa-spinner"></span></p>
+            <P>All I need is sleep <span class="fas fa-bed"></span> & food <span class="fas fa-hamburger"></span>.</P>
+            
+        </article>
+    </section>
+
+    <footer>
+        <div style="margin: 25px 0;">
+            <a href="https://github.com/Anan014"><i class="fa fa-github">&#9;GitHub | </i></a>
+            <a href="https://twitter.com/AnanAmer18"><i class="fa fa-twitter">&#9;Twitter | </i></a>
+            <a href="https://www.instagram.com/ananamr/"><i class="fa fa-instagram">&nbsp;Instagram |</i></a>
+            <a href="https://www.facebook.com/anan3633"><i class="fa fa-facebook">&nbsp;Facebook</i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

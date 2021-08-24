@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first web page</title>
+    <script src="https://kit.fontawesome.com/5c4607dc13.js" crossorigin="anonymous">
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+
+        #h1-tag {
+            text-decoration: underline overline;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <h2 style="text-align:center">User Profile Page</h2>
+    <div class="card">
+        <img src="img/Anan_Amer.jpg" style="width:100%">
+        <h1 id="h1-tag">Anan Amer</h1>
+        <h3 class="title">I am a programmer <span class="fas fa-laptop-code"></span></h3>
+        <p>Anan Amer's bio is LOADING <span class="fas fa-spinner"></span></p>
+        <P>All I need is sleep <span class="fas fa-bed"></span> & food <span class="fas fa-hamburger"></span>.</P>
+        <div style="margin: 25px 0;">
+            <a href="https://github.com/Anan014"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/AnanAmer18"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ananamr/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/anan3633"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button><a href="tel:123-456-7890" style="color: white;">Call me</a></button></p>
+    </div>
+</body>
+
+</html>
