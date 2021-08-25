@@ -1,0 +1,128 @@
+body {
+    background-color: #323F50;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    color: white;
+    border-width: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 1s;
+}
+
+.large {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.medium {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.large.flat {
+    background-color: green;
+}
+
+.medium.flat {
+    background-color: red;
+}
+
+.small.flat {
+    background-color: lightskyblue;
+}
+
+.large.round {
+    background-color: orange;
+}
+
+.medium.round {
+    background-color: #E5E500;
+}
+
+.small.round {
+    background-color: grey;
+}
+
+.round {
+    border-radius: 45px;
+}
+
+.btn.normal:hover {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0); */
+    filter: brightness(60%);
+    transition-duration: 0.4s;
+}
+
+.btn.ghost {
+    background-color: #323F50;
+}
+
+
+/* Ghost */
+
+.large.flat.ghost {
+    border: solid green;
+}
+
+.large.flat.ghost:hover {
+    border: solid green;
+    background-color: green;
+}
+
+.medium.flat.ghost {
+    border: solid red;
+}
+
+.medium.flat.ghost:hover {
+    border: solid red;
+    background-color: red;
+}
+
+.small.flat.ghost {
+    border: solid lightskyblue;
+}
+
+.small.flat.ghost:hover {
+    border: solid lightskyblue;
+    background-color: lightskyblue;
+}
+
+.large.round.ghost {
+    border: solid orange;
+}
+
+.large.round.ghost:hover {
+    border: solid orange;
+    background-color: orange;
+}
+
+.medium.round.ghost {
+    border: solid #E5E500;
+}
+
+.medium.round.ghost:hover {
+    border: solid #E5E500;
+    background-color: #E5E500;
+}
+
+.small.round.ghost {
+    border: solid grey;
+}
+
+.small.round.ghost:hover {
+    border: solid grey;
+    background-color: grey;
+}
