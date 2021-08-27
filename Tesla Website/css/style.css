@@ -1,0 +1,455 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Styling */
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7em;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    border-bottom: 1px solid white;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page2 .page2-div-left {
+    float: left;
+    width: 440px;
+    height: 100vh;
+    color: black;
+    padding: 50px;
+    text-align: left;
+}
+
+.page2 .page2-div-right {
+    float: left;
+    width: calc(100% - 440px);
+    height: 100vh;
+    background: url('../img/model_3_safety_hero.png') no-repeat center center/cover;
+    /* background-position-x: -220px; */
+}
+
+.page2 .page2-div-left h4 {
+    font-family: "GothamThin", "Gotham", ;
+    font-weight: 200;
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+
+.page2 .page2-div-left h2 {
+    font-family: "GothamMedium", "Gotham";
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.page2 .page2-div-left p {
+    font-family: "GothamThin", "Gotham";
+    font-weight: 400;
+    font-size: 14px;
+    font: #393c41;
+    margin-bottom: 40px;
+    line-height: 21px;
+}
+
+.page2 .page2-div-left .page2-box {
+    background: #E2E4E4;
+    height: 300px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.page2 .page2-div-left .page2-box h3 {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 20px;
+    font: #393c41;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: -10px;
+}
+
+.page2-box .page2-box-details {
+    width: 100%;
+    color: #393C41;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.page2-box .page2-box-details .box-details-left {
+    float: left;
+    width: 50%;
+    height: 40px;
+}
+
+.page2-box .page2-box-details .box-details-left .box-details-main {
+    float: left;
+    width: 100%;
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 14px;
+    color: #393c41;
+}
+
+.page2-box .page2-box-details .box-details-left .box-details-second {
+    float: left;
+    width: 100%;
+    font-family: "GothamThin";
+    font-weight: 500;
+    font-size: 8px;
+    color: #393C41;
+    margin-top: -10px;
+}
+
+.page2-box .page2-box-details .box-details-stars {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-top: 2.5px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(../fonts/Gotham-Font/GothamMedium.ttf);
+    src: url(../fonts/Gotham-Font/GothamMedium_1.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamThin';
+    src: url(../fonts/Gotham-Font/GothamBook.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Home */
+
+#h1header {
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    font-family: "GothamMedium", "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 48px;
+    font-style: normal;
+    padding-top: 90px;
+    overflow: hidden;
+}
+
+#h1header {
+    text-align: center;
+}
+
+header {
+    height: 100%;
+}
+
+#car-featuers {
+    width: 700px;
+    margin: auto;
+    margin-top: 22%;
+}
+
+.home-box {
+    float: left;
+    padding: 20px;
+    width: 25%;
+}
+
+.divbox1-up {
+    width: 100%;
+}
+
+.divbox1-up .divbox1-up1 {
+    float: left;
+    width: 50%;
+    height: 30px;
+}
+
+.divbox1-up .divbox1-up1 i {
+    float: right;
+    padding-right: 5px;
+}
+
+.divbox1-up .divbox1-up2 {
+    float: left;
+    width: 50%;
+    height: 30px;
+    font-size: 22px;
+    margin-top: 3px;
+    color: white;
+    font-family: "GothamThin", "Gotham", ;
+    letter-spacing: .3rem;
+}
+
+.divbox1 .divbox1-down {
+    font-size: 12px;
+    margin-top: 2px;
+    color: white;
+    font-family: "GothamThin", "Gotham";
+    text-align: center;
+    padding-left: 25px;
+}
+
+.divbox2 .divbox2-up {
+    float: left;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    margin-top: 3px;
+    color: white;
+    font-family: "GothamThin", "Gotham", ;
+    text-align: center;
+}
+
+.divbox2 .divbox2-down {
+    font-size: 12px;
+    margin-top: 2px;
+    color: white;
+    font-family: "GothamThin", "Gotham";
+    text-align: center;
+}
+
+.divbox3 .divbox3-up {
+    float: left;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    margin-top: 3px;
+    color: white;
+    font-family: "GothamThin", "Gotham", ;
+    text-align: center;
+}
+
+.divbox3 .divbox3-down {
+    font-size: 12px;
+    margin-top: 2px;
+    color: white;
+    font-family: "GothamThin", "Gotham";
+    text-align: center;
+}
+
+.divbox4 .ordernow {
+    background: transparent;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: #ffffff solid 3px;
+    color: #dddfe0;
+    width: 100%;
+    font-family: 'Gotham';
+    font-size: 13px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.divbox4 .ordernow:hover {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px 10px;
+    border: #ffffff solid 3px;
+    color: #333333;
+    width: 100%;
+    font-family: 'Gotham';
+    font-size: 13px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.home-arrow {
+    margin: auto;
+    text-align: center;
+}
+
+.home-arrow i {
+    background: transparent;
+}
+
+.home-arrow .button {
+    text-decoration: none;
+}
+
+.home-button-arrow {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Utility Classes */
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.container .logo-container {
+    width: 10%;
+    float: left;
+    position: fixed;
+    display: block;
+    padding: 14px;
+    padding-top: 17px;
+    margin-left: 24px;
+}
+
+svg {
+    width: 120px;
+}
+
+.container .main-menu-container {
+    width: auto;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .main-side-menu-container {
+    width: 20%;
+    float: right;
+    /* position: relative; */
+    display: block;
+    margin-left: 500px;
+    margin-top: 0.26%;
+}
+
+.container .main-side-menu-container ul {
+    margin-right: 10px;
+    /* position: relative; */
+}
+
+
+/* Navbar */
+
+.navbar-main-menu-container {
+    background-color: transparent;
+    color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+    display: table;
+    margin-top: -35px;
+    z-index: 10;
+}
+
+.navbar-main-menu-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-main-menu-container ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navbar-main-menu-container ul li {
+    display: inline;
+}
+
+.navbar-main-menu-container ul li a {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 11px;
+    transition-duration: 1s;
+}
+
+.navbar-main-menu-container ul li a:hover,
+.navbar-main-menu-container ul li a.current {
+    background: #767D87;
+    color: #fff;
+    border-radius: 11px;
+    transition-duration: 0.5s;
+}
+
+#navbar {
+    background-color: transparent;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+
+/* #navbar h1 {
+    float: left;
+    padding-top: 20px;
+} */
+
+#navbar ul {
+    list-style: none;
+    float: none;
+}
+
+#navbar ul li {
+    float: right;
+}
+
+#navbar ul li a {
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    border-radius: 11px;
+    transition-duration: 1s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #8D9196;
+    color: #fff;
+    border-radius: 11px;
+    transition-duration: 0.5s;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar .main-menu-container ul li {
+    float: left;
+}
+
+
+/* showcase */
+
+#showcase {
+    background: url('../img/M3-Hero-LHD-US-D.jpg') no-repeat center center/cover;
+    background-position-y: 35%;
+    height: 100vh;
+    font-family: "GothamThin", "Gotham", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 21px;
+}
