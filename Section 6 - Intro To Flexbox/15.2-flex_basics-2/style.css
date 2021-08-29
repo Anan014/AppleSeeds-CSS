@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    background-color: wheat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container div {
+    width: 100px;
+    height: 100px;
+}
+
+.flex-container .first {
+    background: green;
+}
+
+.flex-container .second {
+    background: blue;
+}
+
+.flex-container .third {
+    background: red;
+}

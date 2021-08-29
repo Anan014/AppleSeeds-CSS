@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex;
+    background-color: wheat;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.flex-container div {
+    width: 100px;
+    height: 100px;
+}
+
+.flex-container .first {
+    background: green;
+}
+
+.flex-container .second {
+    background: blue;
+}
+
+.flex-container .third {
+    background: red;
+}
