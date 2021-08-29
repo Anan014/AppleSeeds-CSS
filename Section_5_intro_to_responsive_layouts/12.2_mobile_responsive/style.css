@@ -1,0 +1,47 @@
+.main {
+    width: 100%;
+}
+
+div {
+    padding: 10px;
+}
+
+
+/* Smartphone */
+
+@media (max-width: 500px) {
+    div {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:501px) and (max-width: 768px) {
+    div {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/* Normal */
+
+@media (min-width:769px) and (max-width: 1200px) {
+    div {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+/* Widesreen */
+
+@media (min-width: 1200px) {
+    div {
+        float: left;
+        width: 25%;
+    }
+}
