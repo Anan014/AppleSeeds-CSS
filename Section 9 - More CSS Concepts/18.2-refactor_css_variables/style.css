@@ -1,0 +1,285 @@
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: #3b5998;
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media (min-width:1201px) {
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 70%;
+        margin: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+    .main-container {
+        height: 100vh;
+    }
+    /* Style the header */
+    header {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        text-align: center;
+        color: var(--primary-color);
+        font-weight: bold;
+        margin: 1%;
+        border-radius: 5px;
+    }
+    .area {
+        height: calc(100% - 200px);
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 42%;
+        /* only for demonstration, should be removed */
+        background: var(--primary-color);
+        padding: 20px;
+        margin: 1%;
+        height: 100%;
+        height: 99%;
+        border-radius: 5px;
+    }
+    img {
+        border-radius: 50%;
+        border: 2px black solid;
+        width: 100%;
+    }
+    a {
+        color: var(--primary-color);
+        transition-duration: 0.7s;
+        border-radius: 20px;
+    }
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    article {
+        float: right;
+        padding: 20px;
+        width: 53%;
+        background-color: var(--primary-color);
+        margin: 1%;
+        height: 99%;
+        text-align: center;
+        border-radius: 5px;
+    }
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the footer */
+    .ahref-container {
+        float: left;
+        width: 25%;
+    }
+    .footer-style {
+        line-height: 3rem;
+        height: auto;
+    }
+    a:hover {
+        background: grey;
+        padding: 15px;
+        border-radius: 20px;
+        transition-duration: 0.7s;
+    }
+    footer {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        text-align: center;
+        color: black;
+        margin: 1%;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:501px) and (max-width:1200px) {
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .main-container {
+        height: 100vh;
+    }
+    /* Style the header */
+    header {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        text-align: center;
+        color: whitesmoke;
+        font-weight: bold;
+        margin: 1%;
+    }
+    .area {
+        height: calc(100% - 200px);
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 42%;
+        /* only for demonstration, should be removed */
+        background: var(--primary-color);
+        padding: 20px;
+        margin: 1%;
+        height: 100%;
+        height: 99%;
+    }
+    img {
+        border-radius: 50%;
+        border: 2px black solid;
+        width: 100%;
+        border-radius: 20px;
+        transition-duration: 0.7s;
+    }
+    a {
+        color: var(--primary-color);
+    }
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    article {
+        float: right;
+        padding: 20px;
+        width: 53%;
+        background-color: var(--primary-color);
+        margin: 1%;
+        height: 99%;
+        text-align: center;
+    }
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the footer */
+    .ahref-container {
+        float: left;
+        width: 25%;
+    }
+    .footer-style {
+        line-height: 4rem;
+        height: auto;
+    }
+    a:hover {
+        background: grey;
+        padding: 15px;
+        border-radius: 20px;
+        transition-duration: 0.7s;
+    }
+    footer {
+        background-color: var(--secondary-color);
+        text-align: center;
+        color: black;
+        margin: 1%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 500px) {
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .main-container {
+        height: 100vh;
+    }
+    /* Style the header */
+    header {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        text-align: center;
+        color: var(--primary-color);
+        font-weight: bold;
+        margin: 1%;
+        height: 4rem;
+    }
+    .area {
+        height: calc(100% - 200px);
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 42%;
+        /* only for demonstration, should be removed */
+        background: var(--primary-color);
+        padding: 20px;
+        margin: 1%;
+        width: 100%;
+        height: auto;
+    }
+    img {
+        border-radius: 50%;
+        border: 2px black solid;
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    a {
+        color: var(--primary-color);
+        border-radius: 20px;
+        transition-duration: 0.7s;
+    }
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    article {
+        float: right;
+        padding: 20px;
+        /* width: 53%; */
+        background-color: var(--primary-color);
+        margin: 1%;
+        /* height: 99%; */
+        text-align: center;
+        width: 98%;
+        height: calc(100vh - 28rem);
+    }
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the footer */
+    .ahref-container {
+        float: left;
+        width: 50%;
+    }
+    .footer-style {
+        line-height: 3.5rem;
+        height: auto;
+    }
+    a:hover {
+        background: grey;
+        padding: 15px;
+        border-radius: 20px;
+        transition-duration: 0.7s;
+    }
+    footer {
+        background-color: var(--secondary-color);
+        text-align: center;
+        color: black;
+        margin: 1%;
+        height: auto;
+    }
+}

@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+button {
+    margin-top: 10px;
+    padding: 20px 100px;
+    background: transparent;
+    cursor: pointer
+}
+
+
+/* Fill from top */
+
+.div-translate-y {
+    box-shadow: inset 0px 0px 0px #2F3B47;
+    transition: all 0.5s !important;
+}
+
+.div-translate-y:hover {
+    box-shadow: inset 0px 60px 0px red;
+}
+
+.div-translate-y:hover:after {
+    /* display: none; */
+    content: attr(title);
+}
+
+
+/* Fill from left */
+
+.div-translate {
+    box-shadow: inset 0px 0px 0px #2F3B47;
+    transition: all 0.5s !important;
+}
+
+.div-translate:hover {
+    box-shadow: inset 300px 0px 0px #2F3B47;
+    color: white;
+}
