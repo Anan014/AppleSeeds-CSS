@@ -9,19 +9,21 @@
     align-content: space-between;
 }
 
-button {
+div>div {
     margin-top: 10px;
     padding: 20px 100px;
     background: transparent;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 
 /* Fill from top */
 
-.div-translate-y {
+.div-translate-y::after {
     box-shadow: inset 0px 0px 0px #2F3B47;
     transition: all 0.5s !important;
+    content: attr(TranslateY);
 }
 
 .div-translate-y:hover {
